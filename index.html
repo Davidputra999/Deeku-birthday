@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Deeku 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="sparkles"></div>
+    <div class="hearts"></div>
+  </div>
+
+  <main>
+    <section class="screen active" id="intro">
+      <div class="card">
+        <div class="tiny">A little surprise for you ✨</div>
+        <h1>Hey Deeku... 💗</h1>
+        <p>I made something just for you.</p>
+        <button onclick="showScreen('journey')">Open Your Surprise 🎀</button>
+      </div>
+    </section>
+
+    <section class="screen" id="journey">
+      <div class="card wide">
+        <div class="tiny">Your journey so far 🌷</div>
+        <h2>You have been shining for...</h2>
+        <div class="timer">
+          <div><strong id="years">0</strong><span>Years</span></div>
+          <div><strong id="days">0</strong><span>Days</span></div>
+          <div><strong id="hours">0</strong><span>Hours</span></div>
+          <div><strong id="minutes">0</strong><span>Minutes</span></div>
+          <div><strong id="seconds">0</strong><span>Seconds</span></div>
+        </div>
+        <p class="quote">“Every second of your journey has made this world a little more beautiful.” 💗</p>
+        <button onclick="showScreen('wish')">Keep going 🌸</button>
+      </div>
+    </section>
+
+    <section class="screen" id="wish">
+      <div class="card">
+        <div class="tiny">A little message 💌</div>
+        <h2>Happy Birthday, Deeku! 🎂</h2>
+        <p>
+          I hope your day is filled with genuine smiles, peaceful moments,
+          beautiful memories and all the happiness you deserve.
+          Keep being the lovely person you are, and may this new year of your
+          life bring you countless reasons to smile. 🌷
+        </p>
+        <div class="mini-cards">
+          <span>You deserve happiness. 💗</span>
+          <span>You deserve beautiful moments. ✨</span>
+          <span>And today, you deserve to feel extra special. 🎀</span>
+        </div>
+        <button onclick="showScreen('song')">One more thing 🎵</button>
+      </div>
+    </section>
+
+    <section class="screen" id="song">
+      <div class="card">
+        <div class="tiny">A little dedication 🎧</div>
+        <h2>For you, Deeku 🌸</h2>
+        <div class="song-box">
+          <div class="vinyl">♫</div>
+          <div>
+            <strong>Oo Sanam</strong>
+            <small>A song I wanted to dedicate to you 💗</small>
+          </div>
+        </div>
+        <p class="note">Put your own legally obtained audio file in this folder later if you want to add music.</p>
+        <button onclick="showScreen('gift')">There's one last thing... 🎁</button>
+      </div>
+    </section>
+
+    <section class="screen" id="gift">
+      <div class="card">
+        <div class="tiny">Your final surprise 🎁</div>
+        <h2>One last little thing...</h2>
+        <p>Tap the gift. 💗</p>
+        <button class="gift-button" onclick="openGift()">🎁</button>
+        <div id="proposal" class="proposal">
+          <div class="tiny">From my heart...</div>
+          <h1>I Love You So Much, Deeku 💗🤌🏻</h1>
+          <p>You became someone really special to me. I just wanted you to know how much you mean to me. 🌷</p>
+          <div class="final">Happy Birthday, Deeku! 🎂✨</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
