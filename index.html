@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Deeku 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="sparkles"></div>
+    <div class="hearts"></div>
+  </div>
+
+  <main>
+    <section class="screen active" id="intro">
+      <div class="card">
+        <div class="tiny">A little surprise for you ✨</div>
+        <h1>Hey Deeku... 💗</h1>
+        <p>I made something just for you.</p>
+        <button onclick="showScreen('journey')">Open Your Surprise 🎀</button>
+      </div>
+    </section>
+
+    <section class="screen" id="journey">
+      <div class="card wide">
+        <div class="tiny">A little countdown for your special day 🎂</div>
+        <h2>Counting down to your birthday...</h2>
+        <p class="countdown-start">Counting down since <strong>January 1, 2026</strong> ✨</p>
+        <div class="timer">
+          <div><strong id="days">0</strong><span>Days</span></div>
+          <div><strong id="hours">0</strong><span>Hours</span></div>
+          <div><strong id="minutes">0</strong><span>Minutes</span></div>
+          <div><strong id="seconds">0</strong><span>Seconds</span></div>
+        </div>
+        <p id="countdownStatus" class="quote">Until December 29, 2026 🎀</p>
+        <p class="quote">“Some days are worth waiting for.” 💗</p>
+        <button onclick="showScreen('wish')">Keep going 🌸</button>
+      </div>
+    </section>
+
+    <section class="screen" id="wish">
+      <div class="card">
+        <div class="tiny">A little message 💌</div>
+        <h2>Happy Birthday, Deeku! 🎂</h2>
+        <p>
+          I hope your day is filled with genuine smiles, peaceful moments,
+          beautiful memories and all the happiness you deserve.
+          Keep being the lovely person you are, and may this new year of your
+          life bring you countless reasons to smile. 🌷
+        </p>
+        <div class="mini-cards">
+          <span>You deserve happiness. 💗</span>
+          <span>You deserve beautiful moments. ✨</span>
+          <span>And today, you deserve to feel extra special. 🎀</span>
+        </div>
+        <button onclick="showScreen('song')">One more thing 🎵</button>
+      </div>
+    </section>
+
+    <section class="screen" id="song">
+      <div class="card">
+        <div class="tiny">A little dedication 🎧</div>
+        <h2>For you, Deeku 🌸</h2>
+        <div class="song-box">
+          <div class="vinyl">♫</div>
+          <div>
+            <strong>Oo Sanam</strong>
+            <small>A song I wanted to dedicate to you 💗</small>
+          </div>
+        </div>
+        <p class="note">Put your own legally obtained audio file in this folder later if you want to add music.</p>
+        <button onclick="showScreen('gift')">There's one last thing... 🎁</button>
+      </div>
+    </section>
+
+    <section class="screen" id="gift">
+      <div class="card">
+        <div class="tiny">Your final surprise 🎁</div>
+        <h2>One last little thing...</h2>
+        <p>Tap the gift. 💗</p>
+        <button class="gift-button" onclick="openGift()">🎁</button>
+        <div id="proposal" class="proposal">
+          <div class="tiny">One last thing... 💌</div>
+          <h2>Among all the people I've met online...</h2>
+          <p>Among all the people I've met online, somehow you became someone I genuinely care about. 🤌🏻✨</p>
+          <p>I don't really know where life will take us, and I don't want to put any pressure on anything. I just wanted you to know that having you in my life has been something really special to me.</p>
+          <p>So on your birthday, I just hope you smile 😊 a little more, laugh a little louder, and have a day as wonderful as you deserve. 🌷</p>
+          <p><strong>Happy Birthday! 🎂✨</strong></p>
+          <p><strong>~ Stay the amazing person you are. 💫</strong></p>
+          <p>And maybe... this little surprise is just my way of saying... 😁</p>
+          <h2 class="final">I'm really happy you're here. 🤍🫶🏻</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
